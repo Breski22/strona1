@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strona test_1</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="p-4">
+  <div class="topbar">
+    <div>
+      <span class="text-orange-400">⏰ <span id="clock">--:--</span></span>
+      <span class="ml-2" id="date">--/--</span>
+    </div>
+    <div class="text-center text-sm">STRONA 2MI</div>
+    <div class="flex items-center space-x-2">
+      <div class="flex items-center space-x-2">
+  <span>🔊</span>
+  <a href="https://www.youtube.com/watch?v=5HBJCyaLka0" target="_blank" class="underline text-blue-400 hover:text-blue-200">HYMN CAROLINUM</a>
+</div>
+
+    </div>
+  </div>
+<div class="flex space-x-2 mb-2 mt-3">
+  <button id="addTextRow" class="bg-blue-600 text-white px-3 py-1 rounded">Dodaj panel tekstu</button>
+  <button id="addMediaRow" class="bg-green-600 text-white px-3 py-1 rounded">Dodaj panel tekstu i mediów(film)</button>
+</div>
+<!-- gotowe panele-->
+  <div id="dynamicGrid" class="grid grid-cols-4 gap-4 mt-4 grid-rows-1 h-[calc(100vh-1rem)]">
+    <div class="window col-span-2">
+      <div class="window-header">
+        <div class="flex items-center">
+          <div class="dot bg-red-500"></div>
+          <div class="dot bg-yellow-400"></div>
+          <div class="dot bg-green-500"></div>
+        </div>
+        <span class="text-sm">Website 1</span>
+      </div>
+      <div class="window-content text-xs whitespace-pre-wrap">
+        <textarea
+      class="w-full h-full resize-none bg-transparent text-xs text-cyan-100 font-mono outline-none p-2"
+      placeholder="Wpisz opis..."></textarea>
+      </div>
+    </div>
+    <div class="window col-span-2">
+      <div class="window-content text-center">
+        <img src="/wp6045534-desktop-japan-aesthetic-wallpapers.jpg" alt="Wallpaper" class="rounded-xl mx-auto mb-2 max-h-30">
+        <div class="text-left">
+          <p class="text-pink-400">I M | B O R E D</p>
+          <p>RANDOM LAPTOP WITH NGINX</p>
+          <p><span id="mem-used">--</span> / <span id="mem-total">--</span></p>
+          <p>999+ (ubuntu)</p>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="underline text-blue-400 hover:text-blue-200">Źródło motywu</a>
+          <p>Nie do usunięcia</p>
+          <p>Inspiracja z motywów do Hyprland</p>
+          <div class="mt-2 flex space-x-2">
+            <span class="bg-purple-400 px-2 rounded">/var/www/website1/index.html</span>
+            <span class="bg-gray-700 px-2 rounded">-></span>
+            <span class="bg-blue-500 px-2 rounded">this website</span>
+          </div>
+          
+          </div>
+      </div>
+    </div>
+
+    <div class="window col-span-3">
+      <div class="window-header">
+        <div class="flex items-center">
+          <div class="dot bg-red-500"></div>
+          <div class="dot bg-yellow-400"></div>
+          <div class="dot bg-green-500"></div>
+        </div>
+        <span class="text-sm">Box 2</span>
+      </div>
+      <div class="window-content">
+        Ten oto film... jest przykładem co klasa 2mi robi na przerwach. <br>
+        <span >W ruskim stylu</span>
+      </div>
+    </div>
+
+
+    <div class="window col-span-1">
+      <div class="window-header">
+        <div class="flex items-center">
+          <div class="dot bg-red-500"></div>
+          <div class="dot bg-yellow-400"></div>
+          <div class="dot bg-green-500"></div>
+        </div>
+        <span class="text-sm">Box 3</span>
+      </div>
+      <div class="window-content">
+        <div class="flex flex-col space-y-2">
+          <video src="/cheekibreeki.mp4" class="w-full object-cover rounded-lg" autoplay loop controls></video>
+        </div>
+      </div>
+    </div>
+
+    <div class="window col-span-4">
+      <div class="window-header">
+        <div class="flex items-center">
+          <div class="dot bg-red-500"></div>
+          <div class="dot bg-yellow-400"></div>
+          <div class="dot bg-green-500"></div>
+        </div>
+        <span class="text-sm">Informacje</span>
+      </div>
+      <div class="window-content">
+        info about this website
+        <div class="flex justify-between mt-2">
+          <span class="text-xs">Strona testowa </span>
+          <span class="text-xs">Stworzone przez: ja</span>
+      </div>
+      <div>
+        <span class="text-xs">Version: 1.0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- koniec gotowych paneli-->
+  <script src="script.js"></script>
+</body>
+</html>
